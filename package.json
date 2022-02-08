@@ -1,0 +1,23 @@
+{
+  "name": "nollup-web-app",
+  "version": "0.0.1",
+  "description": "Example of usage rollup/nollup for web app with typescript",
+  "main": "src/index.ts",
+  "scripts": {
+    "clean": "shx rm -rf dist",
+    "start": "nollup -c --environment NODE_ENV:development",
+    "build": "npm run clean && rollup -c --environment NODE_ENV:production"
+  },
+  "author": "Alexey Politov",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^13.1.3",
+    "@rollup/plugin-typescript": "^8.3.0",
+    "nollup": "^0.18.4",
+    "rollup": "^2.56.3",
+    "rollup-plugin-static-files": "^0.2.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "shx": "^0.3.3",
+    "typescript": "^4.5.5"
+  }
+}
